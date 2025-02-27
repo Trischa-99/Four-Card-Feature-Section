@@ -1,0 +1,173 @@
+body {
+    font-family: "Poppins", serif;
+}
+:root {
+    --grey-500: #4D4F62;
+    --grey-400: #6A7178;
+    --white: #FFFFFF;
+    --red: #EA5454;
+    --cyan: #44D3D2;
+    --blue: #549EF2;
+    --orange: #FCAE4A;
+}
+body {
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 540px;
+    margin-bottom: 74px;
+}
+.header-title-one {
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    color: var(--grey-500);
+    margin: 0;
+    text-align: center;
+}
+.header-title-two {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    color: var(--grey-500);
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+.header-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--grey-500);
+    text-align: center;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 135%;
+    color: var(--grey-500);
+    margin: 0 0 6px 0;
+}
+.card-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--grey-400);
+    margin: 0 0 32px 0;
+}
+img {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin-left: auto;
+}
+section {
+    display: flex;
+}
+.container-card,
+.container-cards{
+    display: flex;
+    align-items: center;
+}
+.container-cards {
+    flex-direction: column;
+    margin: 0 32px;
+}
+.card {
+    width: 350px;
+    height: 250px;
+    padding: 32px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+.card-red {
+    margin-bottom: 32px;
+}
+.card-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+.card-cyan .card-color {
+    background-color: var(--cyan);
+}
+.card-red .card-color {
+    background-color: var(--red);
+}
+.card-orange .card-color {
+    background-color: var(--orange);
+}
+.card-blue .card-color {
+    background-color: var(--blue);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    body {
+        padding: 80px 54px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-card,
+    .container-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-cards {
+        flex-direction: row;
+        margin: 32px 0;
+    }
+    .card-red {
+        margin: 0 32px 0 0 ;
+    }
+    .card {
+        width: 314px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        padding: 56px 30px 46px 30px;
+    }
+    header {
+        width: 316px;
+    }
+    .header-title-one {
+        font-size: 24px;
+    }
+    .header-title-two {
+        font-size: 24px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-card,
+    .container-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-cyan {
+        margin-bottom: 32px;
+    }
+    .card-blue {
+        margin-top: 32px;
+    }
+    .card {
+        width: 314px;
+        height: 250px;
+    }
+}
