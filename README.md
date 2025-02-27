@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/Trischa-99/Four-Card-Feature-Section.git)
+- [Live Site URL](https://trischa-99.github.io/Four-Card-Feature-Section/)
 
 ## My process
 
